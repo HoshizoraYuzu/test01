@@ -18,7 +18,7 @@ body {
     background-color: #cc5cb9;
     opacity: 20%;
     overflow: hidden;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
     position: fixed; /* Fixed position */
