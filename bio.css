@@ -7,10 +7,32 @@
 /* Top navigation bar */
 
 .navbar {
-	@@ -22,7 +21,6 @@ body {
-  text-align: right;
+  background-color: #cc5cb9;
+  opacity: 20%;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+  position: fixed; /* Fixed position */
+  width: 100%; /* Full width */
+  top: 0; /* Position at the top */
+  z-index: 1000; 
 }
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 14px 20px;
+  transition: background-color 0.3s;
+  position: relative;
 }
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 /* Breadcrumb Menu */
 
 .breadcrumbs {
@@ -116,19 +138,19 @@ figcaption {
   font-size: 1.3em;
 }
 
-.tuscany .text {
+.early .text {
   margin-right: 40px;
 }
 
-.milan .text {
+.later .text {
   margin-right: 40px;
 }
 
-.eatdrink .text {
+.legacy .text {
   margin-right: 40px;
 }
 
-	@@ -209,6 +187,6 @@ footer {
+footer {
   color: white;
   clear: both;
   text-align: center;
