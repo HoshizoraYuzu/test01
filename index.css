@@ -15,14 +15,27 @@ body {
   /* Top navigation bar */
   
   .navbar {
-    display: block;
-    width: 100%;
-    padding: 0;
-    background-color: rgb(86, 227, 246);
-    text-align: right;
+    background-color: #cc5cb9;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Styling the links in the navigation bar */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
   }
   
-  
+   /* Change color on hover */
+   .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
   /* Breadcrumb Menu */
   
   .breadcrumbs {
