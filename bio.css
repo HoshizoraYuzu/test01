@@ -18,6 +18,11 @@ body {
   overflow: hidden;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+  position: fixed; /* Fixed position */
+  width: 100%; /* Full width */
+  top: 0; /* Position at the top */
+  z-index: 1000; /* Higher z-index to make sure it's above other elements */
 }
 
 /* Styling the links in the navigation bar */
@@ -27,6 +32,7 @@ body {
   font-size: 18px;
   padding: 14px 20px;
   transition: background-color 0.3s;
+  position: relative;
 }
 
  /* Change color on hover */
