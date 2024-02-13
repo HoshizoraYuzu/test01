@@ -1,82 +1,62 @@
-body {
-  color: hsl(210, 51%, 20%);
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  font-style: light;
-}
 .content-wrapper {
   margin-right: auto;
   margin-left: auto;
-  max-width: 960px;
   max-width: 1100px;
 }
-
 
 /* Top navigation bar */
 
 .navbar {
-@@ -22,7 +21,6 @@ body {
+	@@ -22,7 +21,6 @@ body {
   text-align: right;
 }
 }
-
 /* Breadcrumb Menu */
 
 .breadcrumbs {
-@@ -31,22 +29,22 @@ body {
+
   display: inline-block;
   float: left;
   padding: 0;
-  margin-left: .5rem;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
   margin-left: 0.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-}
+
 .breadcrumbs li {
   display: inline-block;
 }
 
 .breadcrumbs li::after {
-  content: '>';
   content: ">";
   padding: 0 0.5em;
 }
 
 .breadcrumbs li:last-child::after {
-  content:'';
   content: "";
 }
 
 .breadcrumbs a {
-@@ -62,18 +60,17 @@ body {
+
   text-decoration-skip-ink: none;
-}
 }
 
 /* main navigation menu */
 
 .main_nav {
   padding: 0;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 .main_nav li {
   display: inline-block;
-  margin: .5rem;
   margin: 0.5rem;
 }
 
 .main_nav a {
-@@ -88,15 +85,17 @@ body {
-  text-underline-offset: 6px;
-}
 
+  text-underline-offset: 6px;
 }
 
 header {
@@ -90,20 +70,17 @@ header {
   /*border: 5px solid black;*/
 }
 
-
 h1 {
   /*Heading for the entire article*/
   font-size: 3rem;
-@@ -123,76 +122,55 @@ h1 {
-}
-}
-main {
 
+}
+
+main {
 }
 
 section {
   clear: both;
-  margin-top: 60px;
 }
 
 h3 {
@@ -116,82 +93,45 @@ h3 {
 }
 
 figure {
-  float: right;
-  margin: 0px;
-  margin-bottom: 20px;
   float: left;
   display: inline-block;
   margin-left: 0;
 }
 
 img {
-
 }
 
 figcaption {
   font-style: italic;
 }
 
-.intro figure {
 .text {
   max-width: 400px;
   float: left;
-  margin-right: 40px;
   display: inline-block;
-}
 }
 
 .intro p {
-  font-weight: 100;
-  font-style: italic;
+
   font-size: 1.3em;
 }
 
-.early figure {
-  float: right;
-  margin-left: 40px;
-}
-
-.later figure {
-  float: left;
-  margin-right: 40px;
-}
-
-.legacy figure {
-  float: right;
-  margin-left: 40px;
-}
-
-.milan figure {
-  float: left;
 .tuscany .text {
   margin-right: 40px;
 }
-}
 
-.cinqueterre figure {
-  float: right;
-  margin-left: 40px;
-}
-
-.eatdrink figure {
-  float: left;
 .milan .text {
   margin-right: 40px;
 }
-}
-.tips figure {
-  float: left;
+
 .eatdrink .text {
   margin-right: 40px;
 }
-}
-@@ -209,6 +187,6 @@ footer {
+
+	@@ -209,6 +187,6 @@ footer {
   color: white;
   clear: both;
   text-align: center;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
