@@ -1,234 +1,148 @@
+/* Global styles */
 body {
     color: hsl(30, 94%, 63%);
     font-size: 16px;
     font-family: "Roboto", sans-serif;
-    font-style: light;
-  }
-  
-  .content-wrapper {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 960px;
-  }
-  
-  
-  /* Top navigation bar */
-  
-  .navbar {
-    background-color: #cc5cb9;
-    opacity: 20%;
-    overflow: hidden;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
-    position: fixed; /* Fixed position */
-    width: 100%; /* Full width */
-    top: 0; /* Position at the top */
-    z-index: 1000; /* Higher z-index to make sure it's above other elements */
-  }
+    font-weight: lighter;
+    line-height: 1.6; /* Improved readability with increased line height */
+}
 
-  /* Styling the links in the navigation bar */
-  .navbar a {
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 1200px; /* Increased max-width for a wider content area */
+}
+
+/* Top navigation bar */
+.navbar {
+    background-color: rgba(204, 92, 185, 0.8); /* Increased opacity for better visibility */
+    overflow: hidden;
+    padding: 20px; /* Increased padding for better spacing */
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for a more pronounced effect */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 14px 20px;
+    font-size: 20px; /* Increased font size for better readability */
+    padding: 16px 24px; /* Increased padding for better spacing */
     transition: background-color 0.3s;
-    position: relative;
-  }
-  
-   /* Change color on hover */
-   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+}
 
-  /* Breadcrumb Menu */
-  
-  .breadcrumbs {
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjusted background color on hover for better contrast */
+}
+
+/* Breadcrumb Menu */
+.breadcrumbs {
     color: white;
     font-style: italic;
     display: inline-block;
-    float: left;
     padding: 0;
-    margin-left: .5rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-  }
-  
-  .breadcrumbs li {
+    margin: 0.5rem 0;
+}
+
+.breadcrumbs li {
     display: inline-block;
-  }
-  
-  .breadcrumbs li::after {
+}
+
+.breadcrumbs li::after {
     content: '>';
     padding: 0 0.5em;
-  }
-  
-  .breadcrumbs li:last-child::after {
-    content:'';
-  }
-  
-  .breadcrumbs a {
+}
+
+.breadcrumbs li:last-child::after {
+    content: none;
+}
+
+.breadcrumbs a {
     color: white;
-    text-underline-offset: 3px;
-  }
-  
-  .breadcrumbs a:hover {
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
     text-decoration: underline;
     text-decoration-color: yellow;
     text-decoration-thickness: 1.1em;
-    text-underline-offset: -0.9em;
-    text-decoration-skip-ink: none;
-  }
-  
-  
-  /* main navigation menu */
-  
-  .main_nav {
+}
+
+/* Main navigation menu */
+.main_nav {
     padding: 0;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-  }
-  
-  .main_nav li {
+    margin: 1rem 0; /* Increased margin for better separation */
+}
+
+.main_nav li {
     display: inline-block;
-    margin: .5rem;
-  }
-  
-  .main_nav a {
+    margin: 0 1rem; /* Increased margin for better spacing */
+}
+
+.main_nav a {
     text-decoration: none;
     color: white;
-  }
-  
-  .main_nav a:hover {
+}
+
+.main_nav a:hover {
     text-decoration: underline;
     text-decoration-color: orange;
     text-decoration-thickness: 3px;
-    text-underline-offset: 6px;
-  }
-  
-  
-  
-  header {
-    text-align: center;
-    /*background-color: lightgray;*/
-    /*border: 5px solid black;*/
-  }
-  
-  
-  h1 {
-    /*Heading for the entire article*/
-    font-size: 3rem;
+}
+
+/* Article styling */
+h1 {
+    font-size: 3.5rem; /* Increased font size for emphasis */
     font-family: "Bebas Neue", sans-serif;
+    margin: 40px 0 20px; /* Increased margin for better spacing */
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem; /* Increased font size for emphasis */
+}
+
+figure {
     margin: 0;
-    margin-top: 20px;
-  }
-  
-  .byline {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.2rem;
-  }
-  
-  .author {
-    display: inline;
-  }
-  
-  .author-title {
-    display: inline;
-  }
-  
-  .byline .separator {
-    display: inline;
-  }
-  
-  main {
-  
-  }
-  
-  section {
+    margin-bottom: 40px; /* Increased margin for better spacing */
+}
+
+figcaption {
+    font-style: italic;
+}
+
+.intro figure {
+    float: left;
+    margin-right: 60px; /* Increased margin for better spacing */
+}
+
+.intro p {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.6em; /* Increased font size for better readability */
+}
+
+/* Clearfix */
+section::after {
+    content: "";
+    display: table;
     clear: both;
-    margin-top: 60px;
-  }
-  
-  h3 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 2rem;
-  }
-  
-  figure {
-    float: right;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
-  
-  img {
-  
-  }
-  
-  figcaption {
+}
+
+ul {
     font-style: italic;
-  }
-  
-  .intro figure {
-    float: left;
-    margin-right: 40px;
-  }
-  
-  .intro p{
-    font-weight: 100;
-    font-style: italic;
-    font-size: 1.3em;
-  }
-  
-  .tuscany figure {
-    float: right;
-    margin-left: 40px;
-  }
-  
-  .tuscany2 figure {
-    float: left;
-    margin-right: 40px;
-  }
-  
-  .later figure {
-    float: right;
-    margin-left: 40px;
-  }
-  
-  .milan figure {
-    float: left;
-    margin-right: 40px;
-  }
-  
-  .cinqueterre figure {
-    float: right;
-    margin-left: 40px;
-  }
-  
-  .eatdrink figure {
-    float: left;
-    margin-right: 40px;
-  }
-  
-  .tips figure {
-    float: left;
-    margin-right: 40px;
-  }
-  
-  ul {
-    font-style: italic;
-  }
-  
-  li {
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    background-color: lightgray;
+}
+
+li {
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+footer {
+    background-color: #333; /* Darkened footer background color for contrast */
     color: white;
     clear: both;
     text-align: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-  }
+    padding: 20px 0; /* Increased padding for better spacing */
+}
